@@ -1,0 +1,176 @@
+@use "./variables" as *;
+
+.hero {
+  width: 100%;
+  height: 650px;
+  background-image: url("../img/bg-desktop.png");
+  background-size: cover; // cobre todo o elemento
+  background-position: left; // fixa na esquerda, não centraliza
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  padding-left: 180px;
+
+  .text-container {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 700px;
+
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+      color: $primary-color;
+      font-family: $font-additional;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-size: 32px;
+      font-weight: 400;
+      color: #fff;
+      font-family: $font-additional;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      font-family: $font-family;
+      line-height: 1.5;
+    }
+
+    .text-local {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      font-family: $font-family;
+      line-height: 1.5;
+    }
+
+    .btn-hero {
+      width: 100%;
+      padding: 12px 20px;
+      background-color: $primary-color;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        scale: 0.9;
+      }
+
+      // Animação para chamar atenção
+      animation: pulse 2s infinite ease-in-out; // 2s de duração, repete infinito
+    }
+
+    // Keyframes da animação
+    @keyframes pulse {
+      0%,
+      100% {
+        transform: scale(1); // tamanho normal
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0); // sem sombra
+      }
+      50% {
+        transform: scale(1.05); // cresce um pouco
+        box-shadow: 0 0 15px rgba(76, 175, 80, 0.6); // brilho verde suave
+      }
+    }
+  }
+}
+
+
+// Responsividade
+@media (max-width: 1080px) {
+  .hero {
+    height: 80vh; // ajuste a altura se necessário
+    background-image: url("../img/bg-mobile.png"); // novo background
+    background-position: center; // centraliza para telas menores
+    padding-left: 40px; // diminui padding lateral
+    padding-right: 40px;
+    padding-top: 80px;
+    justify-content: start; 
+
+    .text-container {
+      max-width: 100%;
+      padding: 10px;
+
+      .title {
+        font-size: 36px; // reduz tamanho
+      }
+
+      .subtitle {
+        font-size: 24px; // reduz tamanho
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .text-local {
+        font-size: 12px;
+      }
+
+      .btn-hero {
+        width: auto; // não ocupa 100%
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Responsividade para telas muito pequenas
+@media (max-width: 600px) {
+  .hero {
+    height: 75vh; // altura menor para telas pequenas
+    background-image: url("../img/bg-mobile.png"); // mesmo background ou outro específico se quiser
+    background-position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    justify-content: start;
+
+    .text-container {
+      gap: 12px;
+      padding: 5px;
+
+      .title {
+        font-size: 28px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      .text-local {
+        font-size: 11px;
+      }
+
+      .btn-hero {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+  }
+}

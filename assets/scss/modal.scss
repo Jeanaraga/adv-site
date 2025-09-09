@@ -1,0 +1,32 @@
+@use "./variables" as *;
+
+.modal-whatsapp {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 9999;
+     cursor: pointer;
+     background: none;
+
+     a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #25D366;
+          color: #fff;
+          font-size: 30px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease;
+          text-decoration: none;
+          animation: pulse 2.5s infinite;
+
+
+          &:hover {
+               transform: scale(1.1);
+               box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+          }
+     }
+}

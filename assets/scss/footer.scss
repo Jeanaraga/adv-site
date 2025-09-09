@@ -1,0 +1,110 @@
+@use "./variables" as *;
+.footer {
+  width: 100%;
+  background-color: #000; // Fundo preto
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: $font-additional;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ddd;
+    font-weight: 400;
+  }
+
+  .contato, .horario, .localizacao {
+    max-width: 300px;
+    flex: 1;
+
+    .contato-info, .horario-info, .localizacao-info {
+      display: block;
+    }
+  }
+
+  // Linha de direitos autorais
+  .footer-rights {
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+    p {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+}
+
+// Responsividade
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .contato, .horario, .localizacao {
+      max-width: 100%;
+    }
+  }
+}
+
+
+.rodape {
+  width: 100%;
+  background-color: #070707; // Fundo preto
+  color: #fff;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: $font-family; // ou outra fonte que você estiver usando
+
+  a {
+    color: #4CAF50; // verde destaque
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #fff; // muda pra branco ao passar o mouse
+    }
+  }
+
+  .rodape-text {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+// Responsividade
+@media screen and (max-width: 768px) {
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}
