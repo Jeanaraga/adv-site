@@ -162,6 +162,35 @@ html {
     font-size: 12px;
   }
 }
+@media (max-width: 400px) {
+  .hero {
+    height: 85vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+  }
+  .hero .text-container {
+    gap: 8px;
+    padding: 2px;
+  }
+  .hero .text-container .title {
+    font-size: 24px;
+  }
+  .hero .text-container .subtitle {
+    font-size: 18px;
+  }
+  .hero .text-container .description {
+    font-size: 12px;
+  }
+  .hero .text-container .text-local {
+    font-size: 10px;
+  }
+  .hero .text-container .btn-hero {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
 .services {
   width: 100%;
   min-height: 500px;
