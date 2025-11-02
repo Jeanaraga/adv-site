@@ -77,7 +77,7 @@
 @media (max-width: 768px) {
   .services {
     padding: 40px 20px;
-    height: 1300px;
+    height: 1000px;
 
     .services-container {
       gap: 20px;
@@ -107,6 +107,8 @@
 
 @media (max-width: 480px) {
   .services {
+    height: 1000px;
+
     .services-container {
       .services-title {
         font-size: 1.6rem;
@@ -118,6 +120,54 @@
         .service {
           text-align: center; // centraliza nos celulares
           align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .services {
+    height: 1100px;
+
+    .services-container {
+      .services-title {
+        font-size: 1.4rem;
+      }
+
+      .bloco-services {
+        .service {
+          h3 {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .services {
+    height: 1000px;
+
+    .services-container {
+      .services-title {
+        font-size: 1.2rem;
+      }
+
+      .bloco-services {
+        .service {
+          h3 {
+            font-size: 0.9rem;
+          }
+
+          p {
+            font-size: 0.7rem;
+          }
         }
       }
     }

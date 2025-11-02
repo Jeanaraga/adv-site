@@ -3,9 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=TASA+Orbiter:wght@400..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend+Deca:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -43,15 +42,15 @@ html {
 .hero .text-container .title {
   font-size: 50px;
   font-weight: 600;
-  color: #0f4571;
-  font-family: "Lexend Deca", sans-serif;
+  color: #f0d67f;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
 }
 .hero .text-container .subtitle {
   font-size: 32px;
   font-weight: 400;
   color: #fff;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   text-align: center;
 }
 .hero .text-container .description {
@@ -71,8 +70,8 @@ html {
 .hero .text-container .btn-hero {
   width: 100%;
   padding: 12px 20px;
-  background-color: #0f4571;
-  color: #fff;
+  background-color: #f0d67f;
+  color: #050505;
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -83,7 +82,7 @@ html {
   transition: background-color 0.3s;
 }
 .hero .text-container .btn-hero:hover {
-  background-color: rgb(9.0234375, 41.5078125, 67.9765625);
+  background-color: rgb(234.6503496503, 199.3776223776, 81.3496503497);
   scale: 0.9;
 }
 .hero .text-container .btn-hero {
@@ -211,12 +210,12 @@ html {
   color: #fff;
 }
 .services .services-container .services-title {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #0f4571;
+  color: #123531;
   text-align: center;
 }
 .services .services-container .bloco-services {
@@ -231,10 +230,10 @@ html {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: #0f4571 2px solid;
+  border: #123531 2px solid;
   border-radius: 8px;
   padding: 30px 20px;
-  background-color: #0f4571;
+  background-color: #123531;
   text-align: start;
   transition: all 0.3s ease;
 }
@@ -243,7 +242,7 @@ html {
   background-color: #000;
 }
 .services .services-container .bloco-services .service h3 {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -260,7 +259,7 @@ html {
 @media (max-width: 768px) {
   .services {
     padding: 40px 20px;
-    height: 1300px;
+    height: 1000px;
   }
   .services .services-container {
     gap: 20px;
@@ -282,6 +281,9 @@ html {
   }
 }
 @media (max-width: 480px) {
+  .services {
+    height: 1000px;
+  }
   .services .services-container .services-title {
     font-size: 1.6rem;
   }
@@ -291,6 +293,34 @@ html {
   .services .services-container .bloco-services .service {
     text-align: center;
     align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .services {
+    height: 1100px;
+  }
+  .services .services-container .services-title {
+    font-size: 1.4rem;
+  }
+  .services .services-container .bloco-services .service h3 {
+    font-size: 1rem;
+  }
+  .services .services-container .bloco-services .service p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .services {
+    height: 1000px;
+  }
+  .services .services-container .services-title {
+    font-size: 1.2rem;
+  }
+  .services .services-container .bloco-services .service h3 {
+    font-size: 0.9rem;
+  }
+  .services .services-container .bloco-services .service p {
+    font-size: 0.7rem;
   }
 }
 .about {
@@ -318,8 +348,8 @@ html {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #0f4571;
-  font-family: "Lexend Deca", sans-serif;
+  color: #f0d67f;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -344,8 +374,8 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #0f4571;
-  font-family: "Lexend Deca", sans-serif;
+  color: #123531;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
 }
 .about .formacoes .formacoes-list {
@@ -363,7 +393,7 @@ html {
   background: #1d1d1d;
   padding: 12px 16px;
   border-radius: 6px;
-  border-left: 3px solid #0f4571;
+  border-left: 3px solid #123531;
   text-align: left;
 }
 
@@ -439,7 +469,7 @@ html {
   padding: 20px;
 }
 .cta .cta-container .cta-title {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -455,7 +485,7 @@ html {
 .cta .cta-container .btn-cta {
   width: 100%;
   padding: 14px 35px;
-  background: linear-gradient(135deg, #0f4571, rgb(23.96484375, 110.23828125, 180.53515625));
+  background: linear-gradient(135deg, #123531, rgb(37.3943661972, 110.1056338028, 101.7957746479));
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -464,26 +494,26 @@ html {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(15, 69, 113, 0.5);
+  box-shadow: 0 0 15px rgba(18, 53, 49, 0.5);
   animation: pulse 2.5s infinite;
 }
 .cta .cta-container .btn-cta:hover {
   transform: scale(1.08);
-  background: linear-gradient(135deg, rgb(12.01171875, 55.25390625, 90.48828125), #0f4571);
-  box-shadow: 0 0 25px rgba(15, 69, 113, 0.7);
+  background: linear-gradient(135deg, rgb(11.5352112676, 33.9647887324, 31.4014084507), #123531);
+  box-shadow: 0 0 25px rgba(18, 53, 49, 0.7);
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(15, 69, 113, 0.4);
+    box-shadow: 0 0 10px rgba(18, 53, 49, 0.4);
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(15, 69, 113, 0.7);
+    box-shadow: 0 0 20px rgba(18, 53, 49, 0.7);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(15, 69, 113, 0.4);
+    box-shadow: 0 0 10px rgba(18, 53, 49, 0.4);
   }
 }
 
@@ -545,7 +575,7 @@ html {
   margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  border: 2px solid #0f4571;
+  border: 2px solid #123531;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .local-avaliacao .map-container:hover {
@@ -577,7 +607,7 @@ html {
   padding: 20px;
 }
 .local-avaliacao .avaliacoes-container .avaliacoes-title {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -593,7 +623,7 @@ html {
   background: #1d1d1d;
   padding: 12px 16px;
   border-radius: 6px;
-  border-left: 3px solid #0f4571;
+  border-left: 3px solid #123531;
   text-align: left;
   margin-bottom: 10px;
   max-width: 550px;
@@ -651,7 +681,7 @@ html {
 }
 .faq {
   padding: 60px 20px;
-  background-color: #0f4571;
+  background-color: #123531;
   color: #fff;
 }
 .faq .faq-container {
@@ -663,7 +693,7 @@ html {
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -731,7 +761,7 @@ html {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 15px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cinzel", serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
