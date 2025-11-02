@@ -2,9 +2,9 @@
 
 .services {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   padding: 40px 20px;
-  background-color: #000;
+  background-color: #f1f1f1;
   display: flex;
   justify-content: center;
 
@@ -29,33 +29,37 @@
 
     .bloco-services {
       width: 100%;
+      height: 400px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // RESPONSIVO
       gap: 30px;
+      
 
       .service {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         gap: 10px;
         border: $primary-color 2px solid;
-        border-radius: 18px;
+        border-radius: 8px;
         padding: 30px 20px;
-        background-color: #1d1d1d;
+        background-color: $primary-color;
         text-align: start;
         transition: all 0.3s ease;
+        
 
         &:hover {
+          scale: 1.05;
           background-color: #000;
-          border-radius: 10px;
         }
 
         h3 {
           font-family: $font-additional;
-          font-size: 1.3rem;
+          font-size: 1.6rem;
           font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 1px;
-          color: $primary-color;
+          color: #fff;
         }
 
         p {
@@ -73,6 +77,7 @@
 @media (max-width: 768px) {
   .services {
     padding: 40px 20px;
+    height: 1300px;
 
     .services-container {
       gap: 20px;

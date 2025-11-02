@@ -36,7 +36,6 @@
       font-weight: 400;
       color: #fff;
       font-family: $font-additional;
-      text-transform: uppercase;
       text-align: center;
     }
 
@@ -138,7 +137,7 @@
 // Responsividade para telas muito pequenas
 @media (max-width: 600px) {
   .hero {
-    height: 75vh; // altura menor para telas pequenas
+    height: 85vh; // altura menor para telas pequenas
     background-image: url("../img/bg-mobile.png"); // mesmo background ou outro específico se quiser
     background-position: center;
     padding-left: 20px;
