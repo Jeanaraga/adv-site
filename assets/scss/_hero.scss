@@ -137,7 +137,7 @@
 // Responsividade para telas muito pequenas
 @media (max-width: 600px) {
   .hero {
-    height: 85vh; // altura menor para telas pequenas
+    height: 100vh; // altura menor para telas pequenas
     background-image: url("../img/bg-mobile.png"); // mesmo background ou outro específico se quiser
     background-position: center;
     padding-left: 20px;
@@ -176,7 +176,7 @@
 
 @media (max-width: 400px) {
   .hero {
-    height: 85vh; // altura ainda menor
+    height: 100vh; // altura ainda menor
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 40px;

@@ -133,7 +133,7 @@ html {
 }
 @media (max-width: 600px) {
   .hero {
-    height: 85vh;
+    height: 100vh;
     background-image: url("../img/bg-mobile.png");
     background-position: center;
     padding-left: 20px;
@@ -165,7 +165,7 @@ html {
 }
 @media (max-width: 400px) {
   .hero {
-    height: 85vh;
+    height: 100vh;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 40px;
@@ -259,7 +259,7 @@ html {
 @media (max-width: 768px) {
   .services {
     padding: 40px 20px;
-    height: 1000px;
+    height: 1200px;
   }
   .services .services-container {
     gap: 20px;
@@ -282,7 +282,7 @@ html {
 }
 @media (max-width: 480px) {
   .services {
-    height: 1000px;
+    height: 1200px;
   }
   .services .services-container .services-title {
     font-size: 1.6rem;
@@ -297,7 +297,7 @@ html {
 }
 @media (max-width: 375px) {
   .services {
-    height: 1100px;
+    height: 1200px;
   }
   .services .services-container .services-title {
     font-size: 1.4rem;
@@ -311,7 +311,7 @@ html {
 }
 @media (max-width: 320px) {
   .services {
-    height: 1000px;
+    height: 1200px;
   }
   .services .services-container .services-title {
     font-size: 1.2rem;
